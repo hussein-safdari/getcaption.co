@@ -20,39 +20,40 @@ export default class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
           />
+          <link href="static/assets/css/style.css" rel="stylesheet"></link>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://getcaption.co/static/images/apple-touch-icon.png"
+            href="/static/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://getcaption.co/static/images/favicon-32x32.png"
+            href="/static/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://getcaption.co/static/images/favicon-16x16.png"
+            href="/static/images/favicon-16x16.png"
           />
           <link
             rel="manifest"
-            href="https://getcaption.co/static/images/manifest.json"
+            href="/static/images/manifest.json"
           />
           <link
             rel="mask-icon"
-            href="https://getcaption.co/static/images/safari-pinned-tab.svg"
+            href="/static/images/safari-pinned-tab.svg"
             color="#5bbad5"
           />
           <link
             rel="shortcut icon"
-            href="https://getcaption.co/static/images/favicon.ico"
+            href="/static/images/favicon.ico"
           />
           <meta
             name="msapplication-config"
-            content="https://getcaption.co/static/images/browserconfig.xml"
+            content="/static/images/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
 
@@ -72,7 +73,7 @@ export default class MyDocument extends Document {
           />
           <meta
             itemProp="image"
-            content="https://getcaption.co/static/images/cover.png"
+            content="/static/images/cover.png"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
@@ -85,15 +86,15 @@ export default class MyDocument extends Document {
           <meta name="twitter:creator" content="@gielcobben" />
           <meta
             name="twitter:image:src"
-            content="https://getcaption.co/static/images/cover.png"
+            content="/static/images/cover.png"
           />
 
           <meta property="og:title" content="Caption — Start watching" />
           <meta property="og:type" content="article" />
-          <meta property="og:url" content="https://getcaption.co/" />
+          <meta property="og:url" content="http://getsub.ir/" />
           <meta
             property="og:image"
-            content="https://getcaption.co/static/images/cover.png"
+            content="/static/images/cover.png"
           />
           <meta
             property="og:description"

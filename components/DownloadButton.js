@@ -48,7 +48,7 @@ class DownloadButton extends React.Component {
           <button onBlur={() => this.setState({ show: false })}>
             <a href={currentSystem.downloadLink}>
               <span className="icon">{currentSystem.icon}</span>
-              <span className="name">Download for {currentSystem.name}</span>
+              <span className="name">دریافت نسخه {currentSystem.name}</span>
             </a>
             <span
               className="icon-dropdown"
@@ -103,7 +103,7 @@ class DownloadButton extends React.Component {
             color: #fff;
             padding: 12px;
             background: var(--brand-color);
-            border-radius: 4px 0 0 4px;
+            border-radius: 0 4px 4px 0;
           }
 
           button a:hover {
@@ -114,7 +114,7 @@ class DownloadButton extends React.Component {
             display: flex;
             align-items: center;
             margin-top: -1px;
-            padding: 0 8px 0 0;
+            padding: 0 0 0 8px;
           }
 
           button .name {
@@ -131,7 +131,7 @@ class DownloadButton extends React.Component {
             transition: all 0.1s ease-out;
             background: var(--brand-color);
             height: 39px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 4px 0 0 4px;
           }
 
           button .icon-dropdown:hover {
@@ -181,7 +181,7 @@ class DownloadButton extends React.Component {
           li:first-child:before {
             content: "";
             position: absolute;
-            right: 13px;
+            left: 13px;
             top: -4px;
             width: 10px;
             height: 10px;
@@ -229,13 +229,14 @@ class DownloadButton extends React.Component {
           }
 
           li .name {
-            margin-left: 12px;
+            margin-right: 12px;
             display: flex;
             align-items: center;
           }
 
           li small {
-            margin: 2px 0 0 4px;
+            margin: 2px 4px 0 0;
+            direction
           }
         `}</style>
 

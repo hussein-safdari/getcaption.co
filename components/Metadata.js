@@ -2,17 +2,13 @@ import PropTypes from "prop-types";
 
 const Metadata = ({ version }) => (
   <span>
-    A product by{" "}
-    <a href="https://twitter.com/gielcobben" target="_blank">
-      Giel
-    </a>{" "}
-    &amp;{" "}
-    <a href="https://twitter.com/vernon_dg" target="_blank">
-      Vernon
-    </a>
-    . Contribute on{" "}
+    تولید و توسعه نرم‌افزار توسط{" "}
+    <a href="https://twitter.com/h003ein" target="_blank">
+    حسین صفدری
+    </a>{". "}
+    ارسال بازخورد در{" "}
     <a href="https://github.com/gielcobben/Caption" target="_blank">
-      Github.
+      تلگرام.
     </a>
     <style jsx>{`
       span {

@@ -56,19 +56,19 @@ class Content extends React.Component {
           name: "Mac",
           icon: iconMac,
           extension: "dmg",
-          downloadLink: undefined,
+          downloadLink: "http://getsub.ir/getsub.dmg",
         },
         {
           name: "Windows",
           icon: iconWindows,
           extension: "exe",
-          downloadLink: undefined,
+          downloadLink: "http://getsub.ir/getsub.exe",
         },
         {
           name: "Linux",
           icon: iconLinux,
           extension: "deb",
-          downloadLink: undefined,
+          downloadLink: "http://getsub.ir/getsub.deb",
         },
       ],
     };
@@ -77,25 +77,25 @@ class Content extends React.Component {
   async componentDidMount() {
     const { systems } = this.state;
 
-    const req = await fetch(
-      "https://api.github.com/repos/gielcobben/caption/releases",
-    );
-    const res = await req.json();
+    // const req = await fetch(
+    //   "https://api.github.com/repos/gielcobben/caption/releases",
+    // );
+    // const res = await req.json();
 
-    const stables = res.filter(release => {
-      return !release.prerelease;
-    });
+    // const stables = res.filter(release => {
+    //   return !release.prerelease;
+    // });
 
-    const latest = stables[0];
+    // const latest = stables[0];
 
-    latest.assets.map(asset => {
-      const extension = asset.name.substr(asset.name.lastIndexOf(".") + 1);
-      systems.map(system => {
-        if (system.extension === extension) {
-          system.downloadLink = asset.browser_download_url;
-        }
-      });
-    });
+    // latest.assets.map(asset => {
+    //   const extension = asset.name.substr(asset.name.lastIndexOf(".") + 1);
+    //   systems.map(system => {
+    //     if (system.extension === extension) {
+    //       system.downloadLink = asset.browser_download_url;
+    //     }
+    //   });
+    // });
 
     this.setState({
       platform: this.getOS(),
@@ -128,13 +128,10 @@ class Content extends React.Component {
     return (
       <section>
         <div>
-          <h1>Caption</h1>
-          <h2>Start Watching</h2>
+          <h1>زیرنویس</h1>
+          <h2>بارگیری خودکار</h2>
           <p>
-            Caption takes the effort out of finding and setting up the right
-            subtitles. A simple design, drag &amp; drop search, and automatic
-            downloading &amp; renaming let you just start watching. Caption is
-            multi-platform, open-source, and built entirely on web technology.
+          زیرنویس تلاش خود را برای یافتن و دریافت زیرنویس مناسب انجام می دهد.  طراحی ساده ، جستجوی کشیدن و رها کردن ، و بارگیری و تغییر نام خودکار به شما امکان می دهد فقط شروع به تماشا کنید. زیرنویس چند پلتفرمی ، متن باز و کاملاً رایگان و بدون تبلیغات است.
           </p>
           {platform && (
             <DownloadButton currentSystemName={platform} systems={systems} />

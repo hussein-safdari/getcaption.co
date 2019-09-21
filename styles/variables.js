@@ -5,7 +5,7 @@ export default css.global`
     --content-width: 640px;
     --content-padding: 60px;
     --brand-color: #007aff;
-    --brand-gradient: linear-gradient(45deg, #003aff 0%, #00b9ff 100%);
+    --brand-gradient: linear-gradient(45deg, #00b9ff 0%, #003aff 100%);
     --brand-color-2: #0095ff;
   }
 

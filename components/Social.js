@@ -3,7 +3,7 @@ const Social = () => (
     <li>
       <div
         className="fb-like"
-        data-href="https://getcaption.co"
+        data-href="http://getSub.ir"
         data-layout="button_count"
         data-action="like"
         data-size="small"
@@ -16,9 +16,9 @@ const Social = () => (
         href="https://twitter.com/share?ref_src=twsrc%5Etfw"
         className="twitter-share-button"
         data-text="Caption – Start watching. "
-        data-url="https://getcaption.co/"
-        data-via="gielcobben"
-        data-hashtags="Caption"
+        data-url="http://getsub.ir/"
+        data-via="getSub"
+        data-hashtags="getSub"
         data-related=""
         data-show-count="false"
       >
@@ -56,7 +56,7 @@ const Social = () => (
 
       li {
         margin: 0;
-        margin-right: 16px;
+        margin-left: 16px;
         font-weight: bold;
         color: #666;
       }

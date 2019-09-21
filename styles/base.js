@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 
 export default css.global`
   html {
-    font-family: sans-serif;
+    font-family: IRANSans;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
@@ -129,7 +129,8 @@ export default css.global`
 
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: sans-serif;
+    font-family: IRANSans;
+    direction: rtl;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -146,27 +147,25 @@ export default css.global`
   }
 
   h1 {
-    margin: 0 0 0.4rem 0;
+    margin: 0 0 0.6rem 0;
     padding: 0;
     color: var(--brand-color);
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: IRANSans;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.7rem;
-    line-height: 1.1;
+    line-height: 1.5;
   }
 
   h2 {
-    margin: 0 0 1.45rem 0;
+    margin: 0 0 1.5rem 0;
     padding: 0;
     color: #000;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: IRANSans;
     font-weight: 800;
     text-rendering: optimizeLegibility;
     font-size: 3.3rem;
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: -0.027rem;
   }
 
